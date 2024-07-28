@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="header__content content container">
-            <a class="content__logo" href="/*">
+            <a class="content__logo" href="/">
                 <img src="./img/logo.png" alt="logo"></a>
             <ul class="content__nav nav">
                 <li class="nav__item">О нас</li>
@@ -20,6 +20,7 @@
                 <li class="nav__item">Психологам</li>
                 <li class="nav__item">Сертификат</li>
                 <li class="nav__item">Материалы</li>
+                <i class="arrow down"></i>
                 <li class="nav__item">FAQ</li>
             </ul>
             <button class="content__btn">Подобрать психолога</button>
@@ -30,91 +31,166 @@
     </header>
 </body>
 </html>
-    <main class="main container">
-        <section>
-            <div>Главная>Блог</div>
-        </section>
-        <h1><span>Блог</span></h1>
-        <section class="filters">
-            <ul class="filters__list">
-                <li class="filters__list">Все</li>
-                <li class="filters__list">Самооценка и самопринятие</li>
-                <li class="filters__list">Self</li>
-                <li class="filters__list">Чувства и эмоции</li>
-                <li class="filters__list">Тревога</li>
-                <li class="filters__list">Упражнения</li>
-                <li class="filters__list">Психология питания</li>
-                <li class="filters__list">Насилие</li>
-                <li class="filters__list">Личное здоровье</li>
+    <main class="main container blog">
+        <div class="blog__breadcrumps">Главная > Блог>
+        </div>
+        <h1 class="blog__title">Блог</h1>
+            <ul class="blog__filters filters__list">
+                <li class="filters__item">
+                    <img src="./img/smail.png" alt="smail">
+                    Все
+                </li>
+                <li class="filters__item">Самооценка и самопринятие</li>
+                <li class="filters__item filters__item_active">
+                    <img src="./img/emoje.png" alt="emoje">
+                    Self
+                </li>
+                <li class="filters__item">Чувства и эмоции</li>
+                <li class="filters__item">Тревога</li>
+                <li class="filters__item">Упражнения</li>
+                <li class="filters__item">Психология питания</li>
+                <li class="filters__item">Насилие</li>
+                <li class="filters__item">Личное здоровье</li>
             </ul>
-        </section>
-        <section class="big-articles-container">
-            <article class="big-article">
-                <img src="./img/eggs.jpg" alt="eggs" class="eggs__link_img" width="300">
-                <div>Эмоциональное выгорание – стадии и симптомы,
-                    методы восстановления и профилактики</div>
-                <p>Автор: Лиза Файнтух</p>
-                <p>Изначально термин «эмоциональное профессиональной сфере и относился...</p>
-                <p>21.08.2021</p>
+        <section class="blog__top articles">
+            <article class="articles___top">
+                <img class="articles___top__image" src="./img/eggs.jpg" alt="eggs" class="eggs__link_img" width="300">
+                <div class="articles__top__text">
+                    <div class="articles__top__title">Эмоциональное выгорание – стадии и симптомы,
+                        методы восстановления и профилактики</div>
+                    <span class="articles__top__author">Автор: Лиза Файнтух</span>
+                    <span class="articles__top__description">Изначально термин «эмоциональное профессиональной сфере и относился...</span>
+                    <span class="articles__top__date">21.08.2021</span>
+                </div>
+                <div class="articles__top__tab">
+                    <div class="tab">
+                        <img src="./img/emoje.png" alt="emoje">
+                        <span>Самооценка и самопринятие</span>
+                    </div>
+                    <div class="tab">
+                        <img src="./img/emoje.png" alt="emoje">
+                        <span>Self</span>
+                    </div>
+                    </div>
+                </div>
             </article>
-            <article class="big-article">
-                <img src="./img/sport.jpg" alt="run" class="run__link_img" width="300">
-                <p>Как не утонуть в тревоге и управлять своими страхами
-                    Автор: Екатерина Бельтюкова</p>
-                <p>Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях
-                    по-разному обходиться ...</p>
-                <p>11.08.2021</p>
+            <article class="articles___top">
+                <img class="articles___top__image" src="./img/sport.jpg" alt="run" class="run__link_img" width="300">
+                <div class="articles__top__text">
+                <span class="articles__top__title">Как не утонуть в тревоге и управлять своими страхами</span>    
+                   <p class="articles__top__author">Автор: Екатерина Бельтюкова</p>
+                <span class="articles__top__description">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях
+                    по-разному обходиться ...</span>
+                <span class="articles__top__date">11.08.2021</span>
+            </div>
+            <div class="articles__top__tab">
+                <div class="tab">
+                    <img src="./img/emoje.png" alt="emoje">
+                    <span>Self</span>
+                </div>
+                </div>
+            </div>
             </article>
 
         </section>
-        <section class="small-articles-container">
-            <articlle class="small-article">
-                <img src="./img/Image1.jpg" alt="girls" class="girls__link_img" width="300">
-                <p>Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</p>
-                <p>Автор: Лиза Файнтух</p>
-                <p>Изначально термин «эмоциональное профессиональной сфере и относился...</p>
-                <p>21.08.2021</p>
-            </articlle>
-            <article class="small-article">
-                <img src="./img/image2.jpg" alt="girls2" class="girls2__link_img" width="300">
-                <p>Как не утонуть в тревоге и управлять своими страхами</p>
-                <p>Автор: Екатерина Бельтюкова</p>
-                <p>Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях
-                    по-разному обходиться ...</p>
-                <p>11.08.2021</p>
+        <section class="blog___bottom">
+            <article class="articles___bottom">
+                <img class="articles___bottom__image" src="./img/Image1.jpg" alt="girls" class="girls__link_img" width="300">
+                <div class="articles__bottom__title">
+                <span class="articles__bottom__text">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</span>
+                <p class="articles__bottom__author">Автор: Лиза Файнтух</p>
+                <span class="articles__bottom__description">Изначально термин «эмоциональное профессиональной сфере и относился...</span>
+                <span class="articles__bottom__date">21.08.2021</span>
+            </div>
+            <div class="articles__bottom__tab">
+                <div class="bottom">
+                    <img src="./img/emoje.png" alt="emoje">
+                    <span>Самооценка и самопринятие</span>
+                </div>
+                <div class="bottom">
+                    <img src="./img/emoje.png" alt="emoje">
+                    <span>Self Психология питания</span>
+                </div>
+                </div>
             </article>
-            <article class="small-article">
-                <img src="./img/image3.jpg" alt="emogis" class="emogis__link_img" width="300">
-                <p>Как управлять своими эмоциями:
-                    8 шагов</p>
-                <p>Автор: Екатерина Бельтюкова</p>
-                <p>Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!
-                </p>
-                <p>07.08.2021</p>
+            <article class="articles___bottom">
+                <img class="articles___bottom__imge" src="./img/image2.jpg" alt="girls2" class="girls2__link_img" width="300">
+                <div class="articles__bottom__title">
+                <span class="articles__bottom__text">Как не утонуть в тревоге и управлять своими страхами</span>
+                <p class="articles__bottom__author">Автор: Екатерина Бельтюкова</p>
+                <span class="articles__bottom__description">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях
+                    по-разному обходиться ...</span>
+                <span class="articles__bottom__date">11.08.2021</span>
+            </div>
+            <div class="articles__bottom__tab">
+                <div class="tab">
+                    <img src="./img/emoje.png" alt="emoje">
+                    <span>Self</span>
+                </div>
+                </div>
             </article>
-            <article class="small-article">
-                <img src="./img/image4.jpg" alt="woman" class="woman__link_img" width="300">
-                <p>Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</p>
-                <p>Автор: Лиза Файнтух под редакцией Екатерины Бельтюковой</p>
-                <p>Изначально термин «эмоциональное я...</p>
-                <p>21.08.2021</p>
+            <article class="articles___bottom">
+                <img class="articles___emoges__imge" src="./img/image3.jpg" alt="emogis" class="emogis__link_img" width="300">
+                <div class="articles__emoges__title">
+                <span class="articles__emoges__text">Как управлять своими эмоциями:
+                    8 шагов</span>
+                <p class="articles__emoges__author">Автор: Екатерина Бельтюкова</p>
+                <span class="articles__emoges__description">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!
+                </span>
+                <span class="articles__emoges__date">07.08.2021</span>
+            </div>
+            <div class="articles__bottom__tab">
+                <div class="tab">
+                    <img src="./img/emoje.png" alt="emoje">
+                    <span>Self</span>
+                </div>
             </article>
-            <article class="small-article">
-                <img src="./img/Image5.jpg" alt="woman2" class="woman2__link_img" width="300">
-                <p>Как не утонуть в тревоге и управлять своими страхами</p>
-                <p>Автор: Екатерина Бельтюкова</p>
-                <p>Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях
-                    по-разному обходиться ...</p>
-                <p>11.08.2021</p>
+            <article class="articles___bottom">
+                <img class="articles___emoges__imge" src="./img/image4.jpg" alt="woman" class="woman__link_img" width="300">
+                <div class="articles__emoges__title">
+                <span class="articles__emoges__text">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</span>
+                <p class="articles__emoges__author">Автор: Лиза Файнтух под редакцией Екатерины Бельтюковой</p>
+                <span class="articles__emoges__description">Изначально термин «эмоциональное я...</span>
+                <span class="articles__emoges__date">21.08.2021</span>
+                <div class="articles__bottom__tab">
+                    <div class="tab">
+                        <img src="./img/emoje.png" alt="emoje">
+                        <span>Self</span>
+                    </div>
+                </div>
             </article>
-            <article class="small-article">
-                <img src="./img/Image6.jpg" alt="boys" class="boys__link_img" width="300">
-                <p>Как управлять своими эмоциями:
-                    8 шагов</p>
-                <p>Автор: Екатерина Бельтюкова</p>
-                <p>Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!
-                </p>
-                <p>07.08.2021</p>
+            <article class="articles___bottom">
+                <img class="articles___emoges__imge" src="./img/Image5.jpg" alt="woman2" class="woman2__link_img" width="300">
+                <div class="articles__emoges__title">
+                <span class="articles__emoges__text">Как не утонуть в тревоге и управлять своими страхами</span>
+                <p class="articles__emoges__author">Автор: Екатерина Бельтюкова</p>
+                <span class="articles__emoges__description">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях
+                    по-разному обходиться ...</span>
+                <span class="articles__emoges__date">11.08.2021</span>
+                <div class="articles__bottom__tab">
+                    <div class="tab">
+                        <img src="./img/emoje.png" alt="emoje">
+                        <span>Self</span>
+                    </div>
+                </div>
+                </div>
+            </article>
+            <article class="articles___bottom">
+                <img class="articles___bottom__imge" src="./img/Image6.jpg" alt="boys" class="boys__link_img" width="300">
+                <div class="articles__bottom__title">
+                <span class="articles__bottom__text">Как управлять своими эмоциями:
+                    8 шагов</span>
+                <p class="articles__bottom__author">Автор: Екатерина Бельтюкова</p>
+                <span class="articles__bottom__description">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!
+                </span>
+                <span class="articles__bottom__date">07.08.2021</span>
+                <div class="articles__bottom__tab">
+                    <div class="tab">
+                        <img src="./img/emoje.png" alt="emoje">
+                        <span>Self</span>
+                    </div>
+                </div>
+                </div>
             </article>
         </section>
         <section>
